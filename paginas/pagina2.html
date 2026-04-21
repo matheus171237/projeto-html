@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Planejamento</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+<header>
+<nav>
+<ul class="menu">
+<li><a href="index.html">Início</a></li>
+<li><a href="destinos.html">Destinos</a></li>
+<li><a href="planejamento.html" class="ativo">Planejamento</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+
+<h1>Planejamento de Viagem</h1>
+<h2>Organize sua próxima aventura</h2>
+
+<!-- TABELA 1 -->
+<table>
+<tr><th>Destino</th><th>Preço Médio</th></tr>
+<tr><td>Paris</td><td>R$ 8000</td></tr>
+<tr><td>Nova York</td><td>R$ 7500</td></tr>
+<tr><td>Roma</td><td>R$ 7000</td></tr>
+</table>
+
+<hr>
+
+<!-- TABELA 2 -->
+<table>
+<tr><th>Item</th><th>Prioridade</th></tr>
+<tr><td>Passagem</td><td>Alta</td></tr>
+<tr><td>Hotel</td><td>Alta</td></tr>
+<tr><td>Seguro viagem</td><td>Média</td></tr>
+</table>
+
+<hr>
+
+<!-- VÍDEO -->
+<h2>Vídeo de Viagem</h2>
+
+<video autoplay muted loop>
+    <source src="media/viagem.mp4" type="video/mp4">
+</video>
+
+<hr>
+
+<!-- ÁUDIO -->
+<h2>Trilha sonora da viagem</h2>
+<audio controls loop>
+    <source src="media/aviao.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<hr>
+
+<!-- FORMULÁRIO -->
+<h2>Planeje sua viagem</h2>
+
+<form>
+
+<fieldset>
+<legend>Dados Pessoais</legend>
+
+Nome: <input type="text" name="nome" placeholder="Digite seu nome" required><br>
+Email: <input type="email" name="email" placeholder="Digite seu email" required><br>
+Telefone: <input type="tel" name="telefone" placeholder="(00) 00000-0000"><br>
+
+</fieldset>
+
+<fieldset>
+<legend>Informações da Viagem</legend>
+
+Destino: <input type="text" name="destino" placeholder="Para onde deseja ir?" required><br>
+Data de ida: <input type="date" name="data"><br>
+Quantidade de pessoas: <input type="number" name="pessoas"><br>
+
+Tipo:<br>
+<input type="radio" name="tipo" value="nacional" required> Nacional<br>
+<input type="radio" name="tipo" value="internacional"> Internacional<br>
+
+</fieldset>
+
+<fieldset>
+<legend>Preferências</legend>
+
+<input type="checkbox" name="preferencia" value="praia"> Praia<br>
+<input type="checkbox" name="preferencia" value="montanha"> Montanha<br>
+<input type="checkbox" name="preferencia" value="cidade"> Cidade<br>
+
+Cor favorita: <input type="color" name="cor"><br>
+Upload de documento: <input type="file" name="arquivo"><br>
+
+</fieldset>
+
+<br>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+
+</form>
+
+<br>
+
+<a href="index.html" class="botao">🏠 Voltar ao início</a>
+<a href="#topo" class="botao">⬆ Voltar ao topo</a>
+
+</div>
+
+</body>
+</html>
